@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: left;
+            margin: 0;
+            color: brown;
+            text-transform: uppercase;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            text-align: left;
+            margin: 0;
+        }
+
+        .flex-column {
+            width: 50%;
+            display: block;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 30px;
+        }
+
+        .contact a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- giới thiệu  -->
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- ảnh 3x4  -->
+            <img src="./DSC_2229.jpg" alt="avatar"
+                style="width: 150px; height: 200px; object-fit: cover; border-radius: 35px;">
+            <div class="name">
+                <h1>Hà Trung Đức</h1>
+                <p style="color: grey; margin: 0; text-align: justify;">Lập trình viên Front-End</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h2>Mục tiêu nghề nghiệp</h2>
+                <p style="font-style: italic;">Mong muốn được làm việc trong môi trường chuyên nghiệp, có thể giúp bản
+                    thân
+                    phát triển ở nhiều khía cạnh từ đó đóng góp tốt nhất cho công ty.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="section">
+            <div class="flex-column">
+                <h2>Lịch sử học vấn</h2>
+                <h3>Đại Học Công Nghệ - ĐHQG Hà Nội</h3>
+                <p>(2019 - 2025)</p>
+            </div>
+            <div class="flex-column">
+                <h2>Kinh nghiệm làm việc</h2>
+                <h3>Thực tập sinh FPT SOFTWARE</h3>
+                <p>(2022)</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="section">
+            <div id="flex-column">
+                <h2>Kỹ năng</h2>
+                <ul>
+                    <li>HTML5, CSS3, SCSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design, UI/UX</li>
+                    <li>Git, GitHub</li>
+                </ul>
+            </div>
+            <div class="flex-column">
+
+                <h2>Sở thích</h2>
+                <ul>
+                    <li>Du lịch</li>
+                    <li>Đọc sách</li>
+                    <li>Bơi lội</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="section contact">
+            <div class="flex-column">
+                <h2>Liên hệ</h2>
+                <div style="margin-left: 10px;">
+                    <p>Email: <a href="mailto:haductrung2612@gmail.com">haductrung2612@gmail.com</a></p>
+                    <p>Di động: <a href="tel:+84326263632" target="_blank">(+84) 326 263 632</a></p>
+                    <p>Địa chỉ: <a href="https://maps.google.com/" target="_blank">Dịch Vọng - Cầu Giấy - Hà Nội</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>2025 Hà Trung Đức</p>
+        </div>
+    </div>
+</body>
+
+</html>
